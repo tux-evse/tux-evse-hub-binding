@@ -1,0 +1,10 @@
+rp-manifest: 1
+
+id: tux-evse-hub-binding
+version: 1
+author: IoT.bzh
+license: GPL
+
+description: >
+  This is the tux-evse demo.
+
