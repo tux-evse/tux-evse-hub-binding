@@ -1,5 +1,5 @@
 #!/usr/bin/bash
 
 /usr/bin/afb-binder -M -p 8080 -vvv \
-    --ws-client unix:/run/user/${UID}/apis/ws/helloworld \
+    --auto-api=/run/user/${UID}/apis/ws/ \
     --roothttp /usr/redpesk/tux-evse-hub-binding/htdocs
