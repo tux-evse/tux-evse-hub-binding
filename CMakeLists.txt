@@ -46,6 +46,9 @@ install(FILES ${CMAKE_CURRENT_BINARY_DIR}/manifest.yml DESTINATION ${DESTDIR}${A
 install(FILES ${CMAKE_SOURCE_DIR}/src/start_hub_bender.sh DESTINATION ${DESTDIR}${AFM_APP_DIR}/${NAME}/bin
     COMPONENT ${NAME} ${exclude})
 
+install(DIRECTORY ${CMAKE_SOURCE_DIR}/htdocs DESTINATION ${DESTDIR}${AFM_APP_DIR}/${NAME}
+    COMPONENT ${NAME} ${exclude})
+
 if(NOT MAKEALL)
 	message("")
 	message(" for installing plugin X type: make X && cmake -DCOMPONENT=X -P cmake_install.cmake")
