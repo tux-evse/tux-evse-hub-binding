@@ -1,0 +1,27 @@
+rp-manifest: 1
+
+id: @NAME@
+version: @PROJECT_VERSION@
+name: @NAME@
+author: IoT.bzh
+license: GPL
+
+description:
+  This is the tux-evse demo.
+
+required-api:
+  - name: helloworld
+    value: auto
+
+targets:
+  - target: main
+    content:
+      src: bin/start_hub_bender.sh
+      type: application/x-executable
+
+file-properties:
+  - name: bin/start_hub_bender.sh
+    value: executable
+
+required-permission:
+  - urn:AGL:permission::system:run-by-default
