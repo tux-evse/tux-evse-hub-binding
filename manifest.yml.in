@@ -28,3 +28,4 @@ file-properties:
 required-permission:
   - urn:AGL:permission::system:run-by-default
   - acl:lock:motor
+  - acl:ic2:0
