@@ -12,6 +12,8 @@ description:
 required-api:
   - name: helloworld
     value: auto
+  - name: i2c
+    value: auto
 
 targets:
   - target: main
@@ -25,3 +27,4 @@ file-properties:
 
 required-permission:
   - urn:AGL:permission::system:run-by-default
+  - acl:lock:motor
