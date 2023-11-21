@@ -14,6 +14,8 @@ required-api:
     value: auto
   - name: i2c
     value: auto
+  - name: tiam62x
+    value: auto
 
 targets:
   - target: main
