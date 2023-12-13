@@ -8,4 +8,4 @@ done
 
 /usr/bin/afb-binder -M -p 8081 -vvv \
     ${LIST_API} \
-    --roothttp /usr/redpesk/tux-evse-hub-binding/htdocs
+    --roothttp /usr/redpesk/tux-evse-webapp/htdocs
