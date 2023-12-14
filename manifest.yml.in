@@ -10,37 +10,23 @@ description:
   This is the tux-evse demo.
 
 required-api:
-  - name: helloworld
-    value: auto
   - name: i2c
     value: auto
   - name: tiam62x
     value: auto
   - name: tux-evse-webapp-mock
     value: auto
-    
+
 targets:
   - target: main
     content:
-      src: bin/start_hub_bender.sh
+      src: bin/start_hub_binder.sh
       type: application/x-executable
 
 file-properties:
-  - name: bin/start_hub_bender.sh
+  - name: bin/start_hub_binder.sh
     value: executable
-  - name: htdocs/favicon.ico
-    value: public
-  - name: htdocs/index.html
-    value: public
-  - name: htdocs/main.js
-    value: public
-  - name: htdocs/polyfills.js
-    value: public
-  - name: htdocs/runtime.js
-    value: public
-  - name: htdocs/styles.css
-    value: public
-    
+
 required-permission:
 #  - urn:AGL:permission::system:run-by-default
   - acl:lock:motor
